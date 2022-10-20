@@ -4,7 +4,7 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
 import config from "../config";
 import { AuthModule } from "../auth/auth.module";
 
-import { ProfileService } from './profile.service';
+import { ProfileService } from './services/profile.service';
 import { ProfileController } from './profile.controller';
 
 @Module({
