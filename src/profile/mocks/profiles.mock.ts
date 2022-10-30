@@ -1,4 +1,5 @@
 export const profilesMock = [{
+  id: 1,
   locale: 'cn',
   cnName: '中文名',
   enName: 'English Name',
@@ -11,6 +12,7 @@ export const profilesMock = [{
   country: '中国',
   isActive: 1
 },{
+  id: 2,
   locale: 'en',
   cnName: '中文名',
   enName: 'English Name',
@@ -23,6 +25,7 @@ export const profilesMock = [{
   country: 'China',
   isActive: 1
 },{
+  id: 3,
   locale: 'cn',
   cnName: '中文名',
   enName: 'English Name',

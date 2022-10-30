@@ -5,7 +5,7 @@ import config from '../config';
 import { AuthModule } from '../auth/auth.module';
 
 import { SequelizeModule } from '@nestjs/sequelize';
-import { Profile } from 'database/models/profile.model';
+import { Profile } from 'src/profile/models/profile.model';
 
 import { ProfileService } from './services/profile.service';
 import { ProfileController } from './profile.controller';
