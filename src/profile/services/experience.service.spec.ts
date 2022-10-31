@@ -41,12 +41,17 @@ describe('ExperienceService', () => {
       } });
     });
 
-    it('should find a active experience record by profile id', async () => {
+    it('should find some active experience record by profile id', async () => {
       await service.findByProfileId(experiencesMock[0].profileId);
-      expect(mockExperienceModel.findOne).toBeCalledWith({ where: { 
+      expect(mockExperienceModel.findAll).toBeCalledWith({ where: { 
         profileId: experiencesMock[0].profileId,
         isActive: true 
       } });
+    });
+
+    it('should return some active experience record by profile id', async () => {
+      const experiences = await service.findByProfileId(experiencesMock[0].profileId);
+      expect(experiences).toEqual(experiencesMock);
     });
   });
 });

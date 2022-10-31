@@ -24,7 +24,7 @@ export class ExperienceService {
   }
 
   findByProfileId(profileId: number) {
-    return this.experienceModel.findOne({ where: { profileId, isActive: true } })
+    return this.experienceModel.findAll({ where: { profileId, isActive: true } })
   }
 
   update(id: number, updateExperienceDto: UpdateExperienceDto) {
