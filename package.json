@@ -22,7 +22,10 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "db:migrate:n": "sequelize-cli migration:generate --name",
     "db:migrate": "sequelize-cli db:migrate",
-    "db:migrate:u": "sequelize-cli db:migrate:undo"
+    "db:migrate:u": "sequelize-cli db:migrate:undo",
+    "db:seed:n": "sequelize-cli seed:generate --name",
+    "db:seed": "sequelize-cli db:seed:all",
+    "db:seed:u": "sequelize-cli db:seed:undo:all"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
